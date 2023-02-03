@@ -1,0 +1,145 @@
+/* 1 Selector de etiqueta */
+p {
+    font-size: 2rem;
+    color: red;
+}
+
+/* 2 Selector de clase */
+.primer-parrafo{
+    font-size: 4rem;
+    color: rgb(24, 195, 70);
+}
+
+
+/* 3 Selector de clase */
+.texto {
+    background-color: rgb(41, 143, 87);
+}
+.azul {
+    color: rgb(13, 48, 250);
+}
+.texto.mayusculas {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 10rem;
+}
+
+
+/* 4 Selector de clases anidadas */
+
+.header .descripcion {
+    color: rgb(255, 0, 0);
+}
+
+.descripcion {
+    color: blue;
+}
+
+
+/* 5 Selector de ID */
+#encabezado {
+    text-transform: uppercase;
+    color: rgb(21, 255, 0);
+}
+
+.texto5 {
+    color: blue;
+}
+
+#encabezado.texto5 {
+    color: aquamarine;
+}
+
+
+/* 6 Selector de etiqueta */
+
+.texto6 {
+    background-color: yellowgreen;
+}
+
+div.texto6{
+    color: aqua;
+}
+
+
+/* 7 Elementos */
+/* 
+.texto7 {
+    border: 3px solid yellow;
+    padding: 2rem;
+}
+
+.oferta7 {
+    border: 3px solid yellow;
+    padding: 2rem;
+} */
+.texto7, 
+.oferta7 {
+    border: 3px solid yellow;
+    padding: 2rem;
+}
+
+
+/* 8 Primer Nivel de hijos */
+.admin > div {
+    border: 1px solid red;
+}
+
+
+/* 9 Primer elemento despues */
+.admin div + p {
+    background-color: red;
+    color: black;
+}
+
+/* 10 Atributo */
+
+a[href^="http"] {
+    color: red;
+}
+
+    /* input[id="telefono"] { */
+#telefono {
+    border: 5px solid aqua;
+}
+
+
+/* 11. Primer hijo de una lista */
+ul li:first-child {
+    border: 2px solid tomato;
+}
+
+/* 12 Ultimo de una lista */
+ul li:last-of-type {
+    border: 2px solid rgb(70, 9, 239);
+}
+
+
+/* 13 Elemento en especifico */
+
+    /* ul li:nth-child(odd)
+    ul li:nth-child(even) */
+ul li:nth-child(3) {
+    border: 2px solid rgb(32, 221, 11);
+}
+
+/* 14 Todos los elementos, excepto uno */
+.heading, .descripcion, .oferta {
+    color: rgb(231, 235, 16);
+}
+
+p:not(.texto):not(.oferta) {
+    color: rgb(95, 30, 95);
+}
+
+/* 15 Primer Linea o Primer Palabra */
+.primer-letra::first-letter {
+    font-size: 20rem;
+}
+
+.primer-linea::first-line {
+    font-size: 4rem;
+    color: rgb(99, 42, 180);
+}
+
+
