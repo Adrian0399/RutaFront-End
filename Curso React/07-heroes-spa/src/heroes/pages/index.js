@@ -1,3 +1,5 @@
 
-export * from './DCPage.jsx';
-export * from './MarvelPage.jsx';
+export * from './DCPage';
+export * from './MarvelPage';
+export * from './HeroPage';
+export * from './SearchPage';
